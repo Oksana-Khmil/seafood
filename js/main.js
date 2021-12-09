@@ -7,7 +7,7 @@ $(function () {
     fade: true,
     responsive: [
       {
-        breakpoint: 361,
+        breakpoint: 371,
         settings: {
           dots: false,
           arrows: false,
@@ -26,7 +26,25 @@ $(function () {
     vertical: true,
     centerMode: true,
     prevArrow: '<button type="button" class="product-prev"><img src="images/product-prev.svg" alt=""></button>',
-    nextArrow: '<button type="button" class="product-next"><img src="images/product-next.svg" alt=""></button>'
+       nextArrow: '<button type="button" class="product-next"><img src="images/product-next.svg" alt=""></button>',
+    responsive: [
+      {
+        breakpoint: 891,
+        settings: {
+          slidesToShow: 3,
+          vertical: false,
+          arrows: false,
+          dots: true
+        },
+         breakpoint: 461,
+        settings: {
+          slidesToShow: 1,
+          vertical: false,
+          arrows: false,
+          dots: true
+        }
+      }
+      ]
 });
 $('.product__content').slick({
   slidesToShow: 1,
